@@ -1,0 +1,39 @@
+.page { padding: 40px 0 80px; }
+.header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 32px; flex-wrap: wrap; gap: 16px; }
+.title { font-size: 26px; font-weight: 500; letter-spacing: -0.025em; margin-bottom: 4px; }
+.subtitle { font-size: 14px; color: var(--ink-muted); }
+
+.empty { text-align: center; padding: 80px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); display: flex; flex-direction: column; align-items: center; gap: 8px; }
+
+.layout { display: grid; grid-template-columns: 320px 1fr; gap: 20px; align-items: start; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+
+.list { display: flex; flex-direction: column; gap: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); overflow: hidden; }
+
+.reportBtn { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: none; background: none; cursor: pointer; width: 100%; text-align: left; border-bottom: 1px solid var(--border); transition: background .15s; }
+.reportBtn:last-child { border-bottom: none; }
+.reportBtn:hover { background: var(--bg); }
+.reportSelected { background: var(--rm-light) !important; }
+
+.reportIcon { font-size: 20px; flex-shrink: 0; }
+.reportInfo { flex: 1; min-width: 0; }
+.reportClient { font-size: 14px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.reportPeriod { font-size: 12px; color: var(--ink-soft); margin-top: 1px; }
+.reportDate { font-size: 11px; color: var(--ink-muted); margin-top: 1px; }
+
+.detail { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 28px; }
+.detailHeader { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; gap: 12px; }
+.detailClient { font-size: 22px; font-weight: 500; letter-spacing: -0.02em; }
+.detailPeriod { font-size: 13px; color: var(--ink-muted); margin-top: 4px; }
+.timeBadge { font-size: 12px; color: var(--rm); background: var(--rm-light); border: 1px solid rgba(124,58,237,.2); padding: 4px 10px; border-radius: 999px; white-space: nowrap; flex-shrink: 0; }
+
+.metricsGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px; }
+.metricCard { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; }
+.metricLabel { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-muted); margin-bottom: 5px; }
+.metricVal { font-size: 22px; font-weight: 600; letter-spacing: -0.03em; }
+
+.narrativeBox { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; }
+.narrativeLabel { font-size: 12px; font-weight: 600; color: var(--rm); margin-bottom: 12px; letter-spacing: .05em; }
+.narrativeText { font-size: 14px; color: var(--ink-soft); line-height: 1.75; white-space: pre-wrap; }
+
+.detailEmpty { background: var(--surface); border: 1px dashed var(--border-strong); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; min-height: 300px; color: var(--ink-muted); font-size: 14px; }

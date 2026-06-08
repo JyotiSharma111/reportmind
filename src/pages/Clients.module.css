@@ -1,0 +1,27 @@
+.page { padding: 40px 0 80px; }
+.header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 32px; flex-wrap: wrap; gap: 16px; }
+.title { font-size: 26px; font-weight: 500; letter-spacing: -0.025em; margin-bottom: 6px; }
+.subtitle { font-size: 15px; color: var(--ink-soft); }
+
+.addCard { background: var(--surface); border: 1.5px solid var(--rm); border-radius: var(--radius-lg); padding: 24px; margin-bottom: 24px; box-shadow: 0 0 0 4px var(--rm-light); }
+.addTitle { font-size: 16px; font-weight: 500; margin-bottom: 16px; }
+.addForm { display: flex; flex-direction: column; gap: 14px; }
+
+.empty { text-align: center; padding: 80px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); }
+.emptyIcon { font-size: 40px; display: block; margin-bottom: 12px; }
+.emptyTitle { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
+.emptySub { font-size: 14px; color: var(--ink-soft); }
+
+.list { display: flex; flex-direction: column; gap: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); overflow: hidden; margin-bottom: 24px; }
+.clientRow { display: flex; align-items: center; gap: 16px; padding: 16px 24px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.clientRow:last-child { border-bottom: none; }
+
+.clientAvatar { width: 40px; height: 40px; border-radius: var(--radius); background: var(--rm-light); color: var(--rm); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+.clientInfo { flex: 1; min-width: 140px; }
+.clientName { font-size: 15px; font-weight: 500; }
+.clientMeta { font-size: 12px; color: var(--ink-muted); margin-top: 2px; }
+
+.clientConnections { display: flex; gap: 6px; flex-wrap: wrap; }
+.clientActions { display: flex; gap: 8px; margin-left: auto; }
+
+.oauthNote { background: rgba(124,58,237,.05); border: 1px solid rgba(124,58,237,.15); border-radius: var(--radius-lg); padding: 16px 20px; font-size: 14px; color: var(--ink-soft); line-height: 1.55; }
