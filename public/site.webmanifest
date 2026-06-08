@@ -1,0 +1,12 @@
+{
+  "name": "ReportMind",
+  "short_name": "ReportMind",
+  "description": "Client reports in 45 seconds",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080b10",
+  "theme_color": "#7c3aed",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
