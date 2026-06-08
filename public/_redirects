@@ -1,4 +1,2 @@
-/auth/*  /index.html  200
 /clients  /index.html  200
 /reports  /index.html  200
-/reports/*  /index.html  200
