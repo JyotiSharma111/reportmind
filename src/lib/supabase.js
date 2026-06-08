@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
-const SUPABASE_URL  = import.meta.env.VITE_SUPABASE_URL
-const SUPABASE_ANON = import.meta.env.VITE_SUPABASE_ANON_KEY
+const SUPABASE_URL  = import.meta.env.VITE_SUPABASE_URL  || 'https://mejofyycvbsmcwyvtikn.supabase.co'
+const SUPABASE_ANON = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1lam9meXljdmJzbWN3eXZ0aWtuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkyMzU3MjcsImV4cCI6MjA5NDgxMTcyN30._ott-AlBhvDIFWBnkLktVpLxM2v132Ce0B9LNttNX4s'
 
 // Cookie scoped to .visull.com — enables silent SSO if user
 // visits another Visull tool. Users never notice this.
